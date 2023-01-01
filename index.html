@@ -1,0 +1,217 @@
+<!-- saved from url=(0047)https://www.cs.cmu.edu/~peiyunh/tiny/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="StyleSheet" href="./files/style.css" type="text/css" media="all">
+
+    <title>Hi-LASSIE: High-Fidelity Articulated Shape and Skeleton Discovery from Sparse Image Ensemble</title>
+
+    <style type="text/css">
+      body {
+	    font-family : Times;
+	    background-color : #f2f2f2;
+	    font-size : 15px;
+      }
+
+      .content {
+	    width : 800px;
+	    padding : 25px 25px;
+	    margin : 25px auto;
+	    background-color : #fff;
+	    border-radius: 20px;
+      }
+      .description {
+        font-family: "Times";
+        white-space: pre;
+        text-align: left;
+      }
+
+      .content-title {
+	    background-color : inherit;
+      margin-top: 5px;
+      padding-top: 5px;
+	    margin-bottom : 0;
+	    padding-bottom : 0;
+      }
+
+      a, a:visited {
+	    text-decoration: none;
+	    color : blue;
+      }
+
+      .anchor {
+      color: inherit;
+      }
+      #authors {
+	    text-align : center;
+      }
+
+      #conference {
+	    text-align : center;
+	    font-style : italic;
+      }
+
+      #authors a {
+	    margin : 0 10px;
+      }
+
+      h1 {
+	    text-align : center;
+	    font-family : Times;
+	    font-size : 35px;
+      }
+
+      h2 {
+	    font-family : Times;
+	    font-size : 25px;
+	    padding : 0; margin : 10px;
+      }
+
+      h3 {
+	    font-family : Times;
+	    font-size : 20px;
+	    padding : 0; margin : 10px;
+      }
+
+      p {
+	    font-family : Times;
+	    line-height : 130%;
+	    margin : 10px;
+      }
+
+      big {
+	    font-family : Times;
+	    font-size : 20px;
+      }
+
+      li {
+	    margin : 10px 0;
+      }
+
+      .samples {
+	    float : left;
+	    width : 50%;
+	    text-align : center;
+      }
+
+      .cond {
+	    float : left;
+	    margin : 0 40px;
+      }
+
+      .cond-container {
+	    width : 700px;
+	    margin : 0 auto;
+	    text-align : center;
+      }
+      #vidalign {
+         display: block;
+         margin: 0px;
+         padding: 0px;
+         position: relative;
+         top: 90px;
+         height: auto;
+         max-width: auto;
+         overflow-y: hidden;
+         overflow-x:auto;
+         word-wrap:normal;
+         white-space:nowrap;
+      }
+
+    </style>
+  </head>
+
+
+
+  <body>
+
+    <div class="content content-title" style="text-align: center;">
+	    <h1>Hi-LASSIE: High-Fidelity Articulated Shape and Skeleton Discovery from Sparse Image Ensemble</h1>
+
+	  <p id="authors">
+      <table align="center" style="width:100%; text-align:center; table-layout: fixed">
+        <tr>
+	      <th><a href="https://deqings.github.io/">Chun-Han Yao<sup>1</sup></a></th>
+        <th><a href="https://hfslyc.github.io">Wei-Chih Hung<sup>2</sup></a></th>
+        <th><a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li<sup>3</sup></a></th>
+        <th><a href="http://people.csail.mit.edu/mrub/">Michael Rubinstein<sup>3</sup></a></th>
+        <th><a href="http://faculty.ucmerced.edu/mhyang/">Ming-Hsuan Yang<sup>134</sup></a></th>
+	      <th><a href="https://varunjampani.github.io/">Varun Jampani<sup>3</sup></a></th>
+        </tr>
+      </table>
+      <table align="center" style="width:100%; text-align:center; table-layout: fixed">
+        <th><sup>1</sup>UC Merced</th>
+        <th><sup>2</sup>Waymo</th>
+        <th><sup>3</sup>Google Research</th>
+        <th><sup>4</sup>Yonsei University</th>
+      </table>
+	  </p>
+    </div>
+
+
+
+    <div class="content">
+      <div style="float: right; width:70px; margin-top: 0px; margin-bottom: 25px">
+      </div>
+      <h2>Results on LASSIE images</h2>
+        <h3> Zebra </h3>
+        <div>
+          <img src="./figures/zebra1.gif" width="20%">
+          <img src="./figures/zebra2.gif" width="20%">
+          <img src="./figures/zebra3.gif" width="20%">
+          <img src="./figures/zebra4.gif" width="20%">
+        </div>
+    </div>
+
+
+
+    <div class="content">
+      <h2>Abstract</h2>
+      <p>
+          Automatically estimating 3D skeleton, shape, camera viewpoints, and part articulation from sparse in-the-wild image ensembles is a severely under-constrained and challenging problem. Most prior methods rely on large-scale image datasets, dense temporal correspondence, or human annotations like camera pose, 2D keypoints, and shape templates. We propose Hi-LASSIE, which performs 3D articulated reconstruction from only 20-30 online images in the wild without any user-defined shape or skeleton templates. We follow the recent work of LASSIE that tackles a similar problem setting and make two significant advances. First, instead of relying on a manually annotated 3D skeleton, we automatically estimate a class-specific skeleton from the selected reference image. Second, we improve the shape reconstructions with novel instance-specific optimization strategies that allow reconstructions to faithful fit on each instance while preserving the class-specific priors learned across all images. Experiments on in-the-wild image ensembles show that Hi-LASSIE obtains higher fidelity state-of-the-art 3D reconstructions despite requiring minimum user input.
+	    </p>
+      <div id="teaser" style="margin: 12px; text-align: left;border-top: 1px solid lightgray;padding-top: 12px;">
+	    <a href="https://arxiv.org/pdf/2212.11042.pdf">
+	        <strong>[Paper]</strong>
+	    </a>
+      <a>
+	        <strong>[Code (soon)]</strong>
+	    </a>
+      </div>
+    </div>
+
+
+    <div class="content">
+        <h2>Bibtex</h2>
+            <p class="description">@inproceedings{yao2022hi-lassie,
+            title={Hi-LASSIE: High-Fidelity Articulated Shape and Skeleton Discovery from Sparse Image Ensemble},
+            author={Yao, Chun-Han and
+                    Wei-Chih Hung and
+                    Yuanzhen Li and
+                    Michael Rubinstein and
+                    Ming-Hsuan Yang and
+                    Jampani, Varun},
+            year={2022}
+            }</p>
+    </div>
+
+
+
+    <div class="content">
+      <div style="float: right; width:70px; margin-top: 0px; margin-bottom: 25px">
+      </div>
+      <h2>Video</h2>
+         <video controls width="810" height="520">
+          <source  src="./files/hi-lassie.mp4" type="video/mp4">
+         </video>
+    </div>
+
+
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+<tr><td>
+    <p align="right"><font size="2">
+        <a href="https://www.cs.cmu.edu/~peiyunh/">Webpage design borrowed from Peiyun Hu</a> </font>
+    </p>
+</td></tr>
+</table>
+
+</body></html>
