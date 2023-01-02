@@ -153,8 +153,7 @@
 
 
     <div class="content">
-      <div style="float: right; width:70px; margin-top: 0px; margin-bottom: 25px">
-      </div>
+      <div style="float: right; width:70px; margin-top: 0px; margin-bottom: 25px"></div>
         <h3>Input image ensemble</h3>
         <div>
           <img src="./figures/zebra1.png" width="24%">
@@ -179,13 +178,13 @@
     <div class="content">
       <h2>Abstract</h2>
       <p>
-          Automatically estimating 3D skeleton, shape, camera viewpoints, and part articulation from sparse in-the-wild image ensembles is a severely under-constrained and challenging problem. Most prior methods rely on large-scale image datasets, dense temporal correspondence, or human annotations like camera pose, 2D keypoints, and shape templates. We propose Hi-LASSIE, which performs 3D articulated reconstruction from only 20-30 online images in the wild without any user-defined shape or skeleton templates. We follow the recent work of LASSIE that tackles a similar problem setting and make two significant advances. First, instead of relying on a manually annotated 3D skeleton, we automatically estimate a class-specific skeleton from the selected reference image. Second, we improve the shape reconstructions with novel instance-specific optimization strategies that allow reconstructions to faithful fit on each instance while preserving the class-specific priors learned across all images. Experiments on in-the-wild image ensembles show that Hi-LASSIE obtains higher fidelity state-of-the-art 3D reconstructions despite requiring minimum user input.
+        Automatically estimating 3D skeleton, shape, camera viewpoints, and part articulation from sparse in-the-wild image ensembles is a severely under-constrained and challenging problem. Most prior methods rely on large-scale image datasets, dense temporal correspondence, or human annotations like camera pose, 2D keypoints, and shape templates. We propose Hi-LASSIE, which performs 3D articulated reconstruction from only 20-30 online images in the wild without any user-defined shape or skeleton templates. We follow the recent work of LASSIE that tackles a similar problem setting and make two significant advances. First, instead of relying on a manually annotated 3D skeleton, we automatically estimate a class-specific skeleton from the selected reference image. Second, we improve the shape reconstructions with novel instance-specific optimization strategies that allow reconstructions to faithful fit on each instance while preserving the class-specific priors learned across all images. Experiments on in-the-wild image ensembles show that Hi-LASSIE obtains higher fidelity state-of-the-art 3D reconstructions despite requiring minimum user input.
       </p>
       <div id="teaser" style="margin: 12px; text-align: left;border-top: 1px solid lightgray;padding-top: 12px;">
 	    <a href="https://arxiv.org/pdf/2212.11042.pdf">
 	        <strong>[Paper]</strong>
 	    </a>
-            <a>
+      <a>
 	        <strong>[Code (soon)]</strong>
 	    </a>
       </div>
@@ -194,8 +193,47 @@
 
 
     <div class="content">
-      <div style="float: right; width:70px; margin-top: 0px; margin-bottom: 25px">
-      </div>
+      <div style="float: right; width:70px; margin-top: 0px; margin-bottom: 25px"></div>
+      <h2>Results on LASSIE images</h2>
+        <div>
+          <img src="./figures/zebra.png" width="30%">
+          <img src="./figures/zebra_part.gif" width="30%">
+          <img src="./figures/zebra_text.gif" width="30%">
+        </div>
+        <div>
+          <img src="./figures/giraffe.png" width="30%">
+          <img src="./figures/giraffe_part.gif" width="30%">
+          <img src="./figures/giraffe_text.gif" width="30%">
+        </div>
+        <div>
+          <img src="./figures/tiger.png" width="30%">
+          <img src="./figures/tiger_part.gif" width="30%">
+          <img src="./figures/tiger_text.gif" width="30%">
+        </div>
+        <div>
+          <img src="./figures/elephant.png" width="30%">
+          <img src="./figures/elephant_part.gif" width="30%">
+          <img src="./figures/elephant_text.gif" width="30%">
+        </div>
+        <div>
+          <img src="./figures/kangaroo.png" width="30%">
+          <img src="./figures/kangaroo_part.gif" width="30%">
+          <img src="./figures/kangaroo_text.gif" width="30%">
+        </div>
+        <div>
+          <img src="./figures/penguin.png" width="30%">
+          <img src="./figures/penguin_part.gif" width="30%">
+          <img src="./figures/penguin_text.gif" width="30%">
+        </div>
+        <p>
+          Hi-LASSIE can reconstruct high-fidelity 3D shapes of diverse animal classes (top to bottom: zebra, giraffe, tiger, elephant, kangaroo, penguin).
+        </p>
+    </div>
+
+
+
+    <div class="content">
+      <div style="float: right; width:70px; margin-top: 0px; margin-bottom: 25px"></div>
       <h2>Animation</h2>
         <div>
           <img src="./figures/zebra4.png" width="24%">
@@ -211,8 +249,7 @@
 
 
     <div class="content">
-        <div style="float: right; width:70px; margin-top: 0px; margin-bottom: 25px">
-        </div>
+        <div style="float: right; width:70px; margin-top: 0px; margin-bottom: 25px"></div>
         <h2>Video</h2>
           <iframe width="800" height="500" src="https://www.youtube.com/embed/s9FWABEm0WU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     </div>
@@ -220,8 +257,8 @@
 
 
     <div class="content">
-        <h2>Bibtex</h2>
-            <p class="description">@inproceedings{yao2022hi-lassie,
+      <h2>Bibtex</h2>
+        <p class="description">@inproceedings{yao2022hi-lassie,
 title={Hi-LASSIE: High-Fidelity Articulated Shape and Skeleton Discovery from Sparse Image Ensemble},
 author={Yao, Chun-Han
         and Hung, Wei-Chih
@@ -231,17 +268,18 @@ author={Yao, Chun-Han
         and Jampani, Varun},
 year={2022}
 }
-            </p>
+        </p>
     </div>
 
 
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-<tr><td>
+  <tr><td>
     <p align="right"><font size="2">
         <a href="https://www.cs.cmu.edu/~peiyunh/">Webpage design borrowed from Peiyun Hu</a> </font>
     </p>
-</td></tr>
+  </td></tr>
 </table>
 
 </body></html>
+
