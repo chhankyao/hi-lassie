@@ -1,3 +1,5 @@
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
 <!-- saved from url=(0047)https://www.cs.cmu.edu/~peiyunh/tiny/index.html -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="StyleSheet" href="./files/style.css" type="text/css" media="all">
@@ -174,7 +176,21 @@
     </div>
 
 
-    
+
+    <div class="content">
+      <h2>Example 3D outputs</h2>
+      <div class="mesh">
+        <img src="./figures/zebra3.png" width="25%">
+        <model-viewer autoplay ar shadow-intensity="1" src="./meshes/zebra3.glb" alt="Zebra" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls width="30%">
+      </div>
+      <div class="mesh">
+        <img src="./figures/giraffe2.png" width="25%">
+        <model-viewer autoplay ar shadow-intensity="1" src="./meshes/giraffe2.glb" alt="Giraffe" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls  width="30%">
+      </div>
+    </div>
+
+
+
     <div class="content">
       <h2>Abstract</h2>
       <p>
