@@ -178,20 +178,6 @@
 
 
     <div class="content">
-      <h2>Example 3D outputs</h2>
-      <div class="mesh">
-        <img src="./figures/zebra3.png" width="25%">
-        <model-viewer autoplay ar shadow-intensity="1" src="./meshes/zebra3.glb" alt="Zebra" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls width="30%">
-      </div>
-      <div class="mesh">
-        <img src="./figures/giraffe2.png" width="25%">
-        <model-viewer autoplay ar shadow-intensity="1" src="./meshes/giraffe2.glb" alt="Giraffe" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls  width="30%">
-      </div>
-    </div>
-
-
-
-    <div class="content">
       <h2>Abstract</h2>
       <p>
         Automatically estimating 3D skeleton, shape, camera viewpoints, and part articulation from sparse in-the-wild image ensembles is a severely under-constrained and challenging problem. Most prior methods rely on large-scale image datasets, dense temporal correspondence, or human annotations like camera pose, 2D keypoints, and shape templates. We propose Hi-LASSIE, which performs 3D articulated reconstruction from only 20-30 online images in the wild without any user-defined shape or skeleton templates. We follow the recent work of LASSIE that tackles a similar problem setting and make two significant advances. First, instead of relying on a manually annotated 3D skeleton, we automatically estimate a class-specific skeleton from the selected reference image. Second, we improve the shape reconstructions with novel instance-specific optimization strategies that allow reconstructions to faithful fit on each instance while preserving the class-specific priors learned across all images. Experiments on in-the-wild image ensembles show that Hi-LASSIE obtains higher fidelity state-of-the-art 3D reconstructions despite requiring minimum user input.
@@ -204,6 +190,28 @@
 	        <strong>[Code (soon)]</strong>
 	    </a>
       </div>
+    </div>
+
+
+
+    <div class="content">
+      <h2>Example 3D outputs</h2>
+      <table align="center" style="width:100%; text-align:center; table-layout: fixed">
+        <tr>
+          <td>Zebra</td>
+          <td><img src="./figures/zebra3.png"></td>
+          <td><model-viewer autoplay ar shadow-intensity="1" src="./meshes/zebra3.glb" alt="Zebra" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></td>
+        </tr>
+        <tr>
+          <td>Giraffe</td>
+          <td><img src="./figures/giraffe2.png" width="80%">
+          <td><model-viewer autoplay ar shadow-intensity="1" src="./meshes/giraffe2.glb" alt="Giraffe" ar ar-modes="webxr scene-viewer quick-look" environment-image="neutral" auto-rotate camera-controls></td>
+        </tr>
+          <td>Input</td>
+          <td>Output</td>
+        <tr>
+        </tr>
+      </table>
     </div>
 
 
